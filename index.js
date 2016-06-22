@@ -6,7 +6,7 @@ module.exports = function(options) {
   currentpage = Math.max(currentpage, 1);
   currentpage = Math.min(currentpage, totalpages);
   pagestartindex = (currentpage - 1) * itemsperpage;
-  pageendindex = -1 + Math.min(currentpage * itemsperpage, totalitems);
+  pageendindex = Math.min(currentpage * itemsperpage, totalitems);
   return {
     totalitems: totalitems,
     totalpages: totalpages,
