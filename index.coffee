@@ -14,4 +14,4 @@ module.exports = (options) ->
   hasprevpage: currentpage > 1
   pagestartindex: pagestartindex
   pageendindex: pageendindex
-  itemsonpage: pageendindex - pagestartindex + 1
+  itemsonpage: pageendindex - pagestartindex
